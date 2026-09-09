@@ -2904,3 +2904,69 @@ footer .text-center p {
         font-size: 29px;
     }
 }
+
+/* Fixed Social Media Bar */
+.social-media-fixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(104, 70, 232, 0.12);
+    border-right: none;
+    border-radius: 14px 0 0 14px;
+    box-shadow: 0 10px 30px rgba(36, 25, 91, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.social-media-fixed a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background: #f4f1ff;
+    color: #6846e8 !important;
+
+    font-size: 17px;
+    text-decoration: none !important;
+
+    transition: all 0.3s ease;
+}
+
+.social-media-fixed a:hover {
+    background: linear-gradient(
+        135deg,
+        #6846e8,
+        #36b8d8
+    );
+    color: #fff !important;
+    transform: translateX(-4px);
+}
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .social-media-fixed {
+        padding: 6px;
+        gap: 5px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .social-media-fixed a {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+}
