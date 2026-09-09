@@ -1,12 +1,4 @@
 /* ==========================
-   AOS ANIMATION
-========================== */
-
-AOS.init({
-    duration:1200,
-    once:true
-});
-
 
 /* ==========================
    NAVBAR SCROLL EFFECT
